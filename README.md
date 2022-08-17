@@ -74,3 +74,7 @@ Follow the previous steps and
 ```bash
   python manage.py runserver
 ```
+Also:
+Django Admin Panel Credentials
+    
+    Username: black, Password:1234(obviously)

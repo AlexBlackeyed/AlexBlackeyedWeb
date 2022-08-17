@@ -15,24 +15,23 @@ A Feature Rich Portfolio/Blog website made with Django and TailwindCSS in about 
 ## Tech Stack
 
 **Frontend:**
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 **Backend:**
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 
 
 ## Screenshots
 
-![Main Page Screenshot](/screenshots/main.png)
-![Projects Screenshot](/screenshots/projects.png)
-![Blog Screenshot](/screenshots/blog.png)
-![Blog Post Screenshot](/screenshots/post.png)
-
+<img src="/screenshots/main.png" width="600">
+<img src="/screenshots/projects.png" width="600">
+<img src="/screenshots/blog.png" width="600">
+<img src="/screenshots/post.png" width="600">
 
 
 

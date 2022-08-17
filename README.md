@@ -9,7 +9,7 @@ A Feature Rich Portfolio/Blog website made with Django and TailwindCSS in about 
 - Responsive Website Design With TailwindCSS.
 - Ability to add new Projects via the Django Admin Panel.
 - Ability to add new Posts on the blog via the Django Admin Panel.
-- Flare System to sort not only Post on the Blog but Projects in the Projects section as well.
+- Flare System to sort not only Posts on the Blog but Projects in the Projects section as well.
 
 
 ## Tech Stack

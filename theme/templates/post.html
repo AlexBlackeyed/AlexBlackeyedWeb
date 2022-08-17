@@ -1,0 +1,18 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+    {% tailwind_css %}
+	{% include "head.html" %}
+	<body class="bg-main font-sans">
+		{% include "navbar.html" %}
+            {% for post in posts %}
+                <h1 class="text-4xl text-center font-semibold text-lightnavy">{{ post.post_title }}</h1>
+                <div class="flex justify-center mt-5">
+                    <div class="bg-navy h-96 pl-5 pt-5 text-creme w-4/5 lg:w-11/12 rounded-md">
+                        <p>{{ post.post | safe }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+	    {% include "footer.html" %}
+	</body>
+</html>

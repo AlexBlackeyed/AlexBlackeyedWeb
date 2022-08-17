@@ -1,0 +1,33 @@
+<nav class="border-lighttext-lightnavy px-2 sm:px-4 py-2.5 rounded">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="/" class="flex items-center">
+          <span class="self-center text-xl font-semibold space-nowrap text-lightblue ">Alex<span class="text-paleorange">Blackeyed</span></span>
+      </a>
+      <button type="button" onclick="toggleHam()" class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-lightnavy hover:bg-lighttext-lightnavy focus:ring-lighttext-lightnavy">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="state">
+        <ul class="flex flex-col p-4 mt-4 rounded-lg border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-base md:border-0 border-light text-lightnavy">
+          {% if request.path == "/" %}
+            <li><a href="/" class="block py-2 pr-4 pl-3 bg-navy rounded md:bg-transparent md:p-0 text-paleorange" aria-current="page">Home</a></li>
+            <li><a href="/projects/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0 text-lightnavy md:hover:text-lightblue  hover:bg-light hover:text-lightblue  md:hover:bg-transparent">Projects</a></li>
+            <li><a href="/blog/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0 text-lightnavy md:hover:text-lightblue  hover:bg-light hover:text-lightblue  md:hover:bg-transparent">Blog</a></li>
+          {% elif "/projects/" in request.path %}
+            <li><a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0 text-lightnavy md:hover:text-lightblue  hover:bg-light hover:text-lightblue  md:hover:bg-transparent" aria-current="page">Home</a></li>
+            <li><a href="/projects/" class="block py-2 pr-4 pl-3 bg-navy rounded md:bg-transparent md:p-0 text-paleorange">Projects</a></li>
+            <li><a href="/blog/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0 text-lightnavy md:hover:text-lightblue  hover:bg-light hover:text-lightblue  md:hover:bg-transparent">Blog</a></li>
+          {% elif "/blog/" in request.path %}
+            <li><a href="/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0 text-lightnavy md:hover:text-lightblue  hover:bg-light hover:text-lightblue  md:hover:bg-transparent" aria-current="page">Home</a></li>
+            <li><a href="/projects/" class="block py-2 pr-4 pl-3 rounded md:border-0 md:p-0 text-lightnavy md:hover:text-lightblue  hover:bg-light hover:text-lightblue  md:hover:bg-transparent">Projects</a></li>
+            <li><a href="/blog/" class="block py-2 pr-4 pl-3 bg-navy rounded md:bg-transparent md:p-0 text-paleorange">Blog</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function toggleHam(){
+        document.getElementById("state").classList.toggle('hidden');
+    }
+  </script>

@@ -34,7 +34,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-NPM_BIN_PATH = r"YOUR_NPM_BIN_PATH"
+NPM_BIN_PATH = os.getenv('NPM_BIN_PATH')
 
 # Application definition
 
